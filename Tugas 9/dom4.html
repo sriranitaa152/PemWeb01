@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 9</title>
+</head>
+<body>
+    <form>
+        <h1>Menghitung Jumlah Dua Bilangan</h1>
+        <input type="number" id="value1" onChange="hitung_penjumlahan()">
+        <br>
+        <span>+</span>
+        <br>
+        <input type="number" id="value2" onChange="hitung_penjumlahan()">
+        <br>
+        <span>=</span>
+        <br>
+        <input type="number" id="hasil">
+    </form>
+
+    <script>
+        function hitung_penjumlahan(){
+            let value1 = document.getElementById("value1").value;
+            let value2 = document.getElementById("value2").value;
+            let hasil = parselnt(value1) + parselnt(value2);
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</body>
+</html>
